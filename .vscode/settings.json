@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "gcc-arm-none-eabi.json"
+            ],
+            "url": "./gcc-arm-none-eabi.schema.json"
+        }
+    ]
+}
