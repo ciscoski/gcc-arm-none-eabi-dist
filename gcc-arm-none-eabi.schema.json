@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/ciscoski/gcc-arm-none-eabi-dist/main/gcc-arm-none-eabi.schema.json",
   "title": "arm Embedded toolchain distributions json schema",
-  "description": "This schema is used to define how to describe a json file that contains possible versions of arm embedded toolchain",
+  "description": "This schema is used to define how to describe a json file that contains possible versions of arm embedded toolchain.",
   "$defs": {
     "asset": {
       "type": "object",
@@ -25,7 +25,7 @@
         }
       }
     },
-    "os":{
+    "version":{
       "type": "object",
       "propertyNames": {
         "enum": ["version", "windows", "darwin", "linux"]
@@ -45,6 +45,6 @@
   },
   "type": "array",
   "items": {
-    "$ref": "#/$defs/os"
+    "$ref": "#/$defs/version"
   }
 }
